@@ -7,7 +7,8 @@ import 'primeicons/primeicons.css';
 import {Avatar, Card, Drawer, Menu, Menubar, Toolbar, Tooltip} from "primevue";
 
 createApp(App)
-    .use(PrimeVue,) { ripple: true, theme: {preset: Material}})
+    .use(i18n)
+    .use(PrimeVue, { ripple: true, theme: {preset: Material}})
     .component('pv-button', Button)
     .component('pv-select-button', SelectButton)
     .component('pv-avatar', Avatar)
@@ -20,5 +21,5 @@ createApp(App)
     .directive('tooltip', Tooltip)
 
     .mount('#app')
-
+createApp(App).mount('#app')
 
